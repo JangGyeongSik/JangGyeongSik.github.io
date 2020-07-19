@@ -1,15 +1,12 @@
 ---
-title: "Centos-2"
+title: "Disk Management"
 date: 2019-07-30 17:50
 categories: Linux
 toc: true
 toc_sticky: true
 toc_label: 목차 
 ---
-## CentOs 
-
-
-## Disk Management
+ ## Disk Management
 ```bash
 parted 
 fdisk -l 하면 추가한 하드디스크가 나오지 않음, 아직 논리적 장치로 인식을 못해서
