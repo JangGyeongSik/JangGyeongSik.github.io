@@ -1,10 +1,13 @@
 ---
 title: "Linux Class day5 "
 date: 2019-07-16 17:10
-categories: Linux 
+categories: Linux
+toc: true
+toc_sticky: true
+toc_label: 목차
 ---
 
-# Chapter2-2 
+## Chapter2-2 
 
 ```class
 -고급권한관리
@@ -15,7 +18,7 @@ setuid, setgid, sticky bit
 setuid : binary file(2진수) or shell scripts , 실행 가능한 파일 목적 ) 권한을 주기 위함.
 ```
 
-```shell
+```bash
 [root@localhost ~]# ls -l /etc/shadow
 	-r--------. 1 root root 1996 Jul 15 02:20 /etc/shadow
 	<-- 비밀번호 변경 후 -->	
@@ -29,7 +32,7 @@ setuid : binary file(2진수) or shell scripts , 실행 가능한 파일 목적 
 	-rwxr-xr-x. 1 root root 117680 Oct 30  2018 /bin/ls
 ```
 
-```shell
+```bash
 setgid
 [userab@localhost ~]$ /tmp/passwd
 Changing password for user userab.
@@ -109,12 +112,12 @@ total 0
 	-setuid는 디렉토리에 영향을 주지 못한다.
 ```
 
-```class
+
 Sticky bit : 파일에 대해서 권한을 다 제거 했는데도 파일이 지워지는 이유는?
 ->파일을 지우거나 만들수 있는 권한은 파일이 있는 share라는 경로가 결정함
-```
 
-```shell
+
+```bash
 [userab@localhost ~]$ touch /share/secret.txt
 [userab@localhost ~]$ chmod 000 /share/secret.txt
 [userab@localhost ~]$ ls -l /share/secret.txt 
@@ -140,7 +143,7 @@ total 0
 ->이렇게봤듯이 내 파일이 아닌 다른사람이 만든 파일을 지우지 못한다!
 ```
 
-```class
+```bash
 [Centos@localhost ~]$ ls -ld /tmp
 drwxrwxrwt. 19 root root 4096 Jul 15 03:12 /tmp
 	파일을 지우는것은 파일을 만든 사람만이 지울 수 있도록 한 것이 스티키 비트.
