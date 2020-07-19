@@ -92,11 +92,16 @@ atq
 ```
 
 ## crontab
-crontab : 컴퓨터 꺼지면 무효
-0 , 7 =  일요일을 의미
+- crontab : 컴퓨터 꺼지면 무효
+- 0 , 7 =  일요일을 의미
+```bash
 */5 */4 * * 1 command
+```
+```class
 crontab -r 은 절대 하지 않는다
-anacron은 실행하지 않을때 다시 실행하도록 함.check기능 
+anacron은 실행하지 않을때 다시 실행하도록 함
+check기능
+```
 ```bash
 anacrontab 확인
 cat /etc/anacrontab 
