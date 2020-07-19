@@ -46,7 +46,8 @@ cat /proc/net/tcp
 netstat -an | more
 
 cat /var/run/sshd.pid
-netstat -anpt | grep :22 //  22번 포트 확인		netstat -nr : 라우팅 테이블 확인, u는 udp
+netstat -anpt | grep :22 //  22번 포트 확인	
+netstat -nr : 라우팅 테이블 확인, u는 udp
 ls -l /proc/1936/exe
 cat /proc/net/tcp
 
@@ -66,9 +67,20 @@ rpm -qf [which losf의 경로] => 설치된 패키지 명 출력
 3. standalone   
 --> 3가지 방식이 있다.
 ```class
-1. etc/rc.d/rc0~6 : 런레벨을 불러오는 장소 0(halt) 1(single mode) 6(reboot) 5(graphical_mode) 3(multiuser_mode) , runlevel 또는 who -r로 확인
-2. super daemon = inetd -> xinetd 	자원이 부족할때 사용하던 방식이여서 요즘 잘 안씀
-3. standalone = 개별적으로 사용자가 동작시키는 것 , systemctl restart sshd.service 
+1. etc/rc.d/rc0~6 : 런레벨을 불러오는 장소 
+0(halt) 
+1(single mode) 
+6(reboot) 
+5(graphical_mode) 
+3(multiuser_mode)
+unlevel 또는 who -r로 확인
+
+2. super daemon = inetd -> xinetd 	
+자원이 부족할때 사용하던 방식이여서 요즘 잘 안씀
+
+3. standalone = 개별적으로 사용자가 동작시키는 것
+- systemctl restart sshd.service 
+
 ls -ld /etc/rc.d/rc.local => 부팅시 실행될 것, 데몬 포함
 profile = 로그인시 적용, etc보다 빨리 적용
 ```
