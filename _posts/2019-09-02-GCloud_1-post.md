@@ -1,7 +1,7 @@
 ---
-title: "Google Cloud_1" 
+title: "GCP-Fundamental" 
 date: 2019-09-02 17:30 
-categories: GCloud
+categories: GCP
 toc: true
 toc_sticky: true
 toc_label : 목차
