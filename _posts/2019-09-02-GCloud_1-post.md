@@ -96,14 +96,6 @@ VM인스턴스
 생성한 VM인스턴스 :  webserver  35.184.80.27
 ```
 
-```bash
- $ sudo apt-get -y update
- $ sudo apt-get -y install \
-git python-pip python-dev python-flask \
-python-wtforms python-arrow \
-python-flask-sqlalchemy python-pymysql \
-python-flaskext.wtf
-```
 ## git & Python 설명
 ```class
 git 분산형 버전 관리 시스템 (github.com 연동)
@@ -116,8 +108,18 @@ python-flask-sqlalchemy : ORM (Object Relational Mapper)
 python-pymysql : Mysql 클라이언트
 python-flaskext.wtf : 폼 요소의 렌더링
 ```
- 
+
+
 ## GCP-Dengonban Service
+```bash
+ $ sudo apt-get -y update
+ $ sudo apt-get -y install \
+git python-pip python-dev python-flask \
+python-wtforms python-arrow \
+python-flask-sqlalchemy python-pymysql \
+python-flaskext.wtf
+```
+
 ```bash
  $ sudo pip install --upgrade setuptools
  $ sudo pip install --upgrade gcloud
