@@ -101,7 +101,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "tmdgh0701@gmail.com"
+      # url: "kqkdn1@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -113,10 +113,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/OhSeungho"
+      url: "https://janggyeongsik.github.io/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://www.instagram.com/seung_ho_o/"
+      # url: "https://www.instagram.com/jang__gz/"
 
 # Site Footer
 footer:
